@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    user-select: none;
+}
+
+body {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(163deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 54%, rgba(252, 176, 69, 1) 100%);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(163deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 54%, rgba(252, 176, 69, 1) 100%);
+    margin-top: 5px;
+    height: 7px;
+    width: 70px;
+}
+
+h2{
+    font-weight: 900;
+    font-size: 25px;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+
+/* font-family: 'Crimson Text', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+.container{
+    width: 1300px;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;  
+}
+
+.container .left-container{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container .left-container .img-container img{
+    border-radius: 50%;
+    background-size: contain;
+    margin-top: 80px;
+}
+
+.container .left-container .name p{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.container .left-container .name p span{
+    font-weight: 900;
+}
+
+.container .left-container .content{
+    background-color: #eff3f5;
+    padding: 5px 17px;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 18px;
+    margin-top: 10px;
+}
+
+.container .left-container .content p{
+    font-weight: 600;
+}
+
+.container .left-container .small-icon i{
+    font-size: 32px;
+    font-weight: 800;
+    margin: 12px 5px;
+    color: black;
+}
+
+.container .left-container #author-detail{
+    width: 100%;
+    margin-top: 35px;
+    padding: 10px 0;
+    border-radius: 0;
+}
+
+.container .left-container #author-detail i{
+    display: inline-block;
+    padding: 6px 0 8px 60px;
+    font-size: 25px;
+}
+
+.container .left-container #author-detail p{
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 8px;
+    font-weight: 500;
+}
+
+.container .left-container .button button{
+    background: rgb(131, 58, 180);
+    background: linear-gradient(163deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 54%, rgba(252, 176, 69, 1) 100%);
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Crimson Text', serif;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+.container .right-container{
+    width: 850px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+.container .right-container #about-section{
+    display: none;
+}
+
+.container .right-container #about-section p{
+    line-height: 29px;
+    padding-top: 15px;
+}
+
+.container .right-container #what_doing_section{
+    background-color: #eff3f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: -30px;
+    height: 510px;
+    border-radius: 0px 0px 20px 20px;
+    display: none;
+}
+
+.container .right-container #what_doing_section h1{
+    font-size: 28px;
+    padding: 60px 0 0 30px;
+}
+
+.container .right-container #what_doing_section h1::after{
+    height: 5px;
+    width: 60px;
+}
+
+.container .right-container #what_doing_section .box-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+
+.container .right-container #what_doing_section .box{
+    width: 380px;
+    height: 150px;
+    background-color: white;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 20px;
+}
+
+.container .right-container #what_doing_section .box .big-icon{
+    font-size: 45px;
+    color: #EF202E;
+    width: 115px;
+    text-align: center;
+}
+
+.container .right-container #what_doing_section .box .box-content{
+    margin-left: 10px;
+}
+
+.container .right-container #what_doing_section .box .box-content h3{
+    font-size: 24px;
+    font-family: 'Crimson Text', serif;
+    padding: 5px 0 2px 5px;
+}
+
+.container .right-container #what_doing_section .box .box-content p{
+    font-size: 17px;
+    padding: 5px;
+}
+
+/* Navigation icon */
+.container .right-container .nav-icon{
+    background: rgb(131, 58, 180);
+    background: linear-gradient(163deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 54%, rgba(252, 176, 69, 1) 100%);
+    padding: 11px 7px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.container .right-container .nav-icon .first,
+.container .right-container .nav-icon .third{
+    width: 28px;
+    height: 5px;
+    background-color: white;
+    margin: 3px auto;
+    border-radius: 5px;
+}
+
+.container .right-container .nav-icon .second{
+    width: 32px;
+    height: 5px;
+    background-color: white;
+    margin: 3px 0;
+    border-radius: 5px;
+}
+
+/* Resume Box */
+.container .resume-container{
+    height: 100%;
+}
+
+.container .resume-container .resume-content{
+    display: flex;
+    margin-top: 20px;
+}
+
+.resume-left{
+    padding: 20px;
+}
+
+.resume-left .education-container h2 i{
+    color: #EF202E;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.resume-left .education-container .education-detail{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.resume-left .education-container .education-detail p{
+    font-size: 18px;
+}
+
+.resume-left .education-container .education-detail .education-content{
+    margin-top: 20px;
+}
+
+.resume-left .other-skill{
+   margin-top: 50px;
+}
+
+.resume-left .other-skill h2{
+    margin-bottom: 40px;
+}
+
+.resume-left .other-skill .skill-bar{
+    background-color: #eff3f5;
+    border-radius: 25px;
+    margin: 15px 5px;
+}
+
+.resume-left .other-skill .skill-bar .limit{
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(163deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 54%, rgba(252, 176, 69, 1) 100%);
+    color: white;
+}
+
+.resume-left .other-skill .skill-bar .limit p{
+    margin: 5px 10px 5px 15px;
+    font-weight: 600;
+}
