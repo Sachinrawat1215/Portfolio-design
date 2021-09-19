@@ -139,12 +139,12 @@ p{
     position: relative;
 }
 
-.container .right-container #about-section{
-    display: none;
+.container .right-container #about_section{
+    display: block;
     padding: 30px;
 }
 
-.container .right-container #about-section p{
+.container .right-container #about_section p{
     line-height: 29px;
     padding-top: 15px;
 }
@@ -156,7 +156,7 @@ p{
     width: 100%;
     height: 510px;
     border-radius: 0px 0px 20px 20px;
-    display: none;
+    display: block;
 }
 
 .container .right-container #what_doing_section h1{
@@ -364,6 +364,10 @@ p{
 }
 
 /* Contact us Section */
+.contact-container{
+    display: none;
+}
+
 .contact-container h1{
     padding: 40px 0 0 50px;
 }
@@ -390,7 +394,7 @@ p{
     font-family: 'Source Sans Pro', sans-serif; 
     border: none;
     outline: none;
-    border-radius: 25px;
+    border-radius: 5px;
     font-weight: 500;
 }
 
@@ -410,4 +414,43 @@ p{
     font-family: 'Crimson Text', serif;
     margin-top: 15px;
     cursor: pointer;
+}
+
+/* Navigation container */
+.right-container .nav-container{
+    position: absolute;
+    top: 30px;
+    right: 70px;
+    border-radius: 8px;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(163deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 54%, rgba(252, 176, 69, 1) 100%);
+    display: none;
+    z-index: 3;
+}
+
+.right-container .nav-container.active{
+    display: block;
+}
+
+.right-container .nav-container ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.right-container .nav-container ul li{
+    padding: 10px 13px;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.right-container .nav-container ul li:hover{
+    background-color: rgb(236, 246, 255);
+}
+
+.right-container .nav-container ul li.active{
+    background-color: black;
+    color: white;
 }
