@@ -1,5 +1,5 @@
 @media (max-width: 1250px) {
-    body{
+    body {
         height: 1100px;
     }
     .container {
@@ -33,47 +33,158 @@
     .container .left-container .img-container img {
         margin: 20px;
     }
-    .container .left-container .small-icon i{
+    .container .left-container .small-icon i {
         font-size: 40px;
         margin: 12px 10px;
     }
-    .container .left-container .small-icon{
+    .container .left-container .small-icon {
         text-align: center;
     }
-    .container .left-container #author-detail{
+    .container .left-container #author-detail {
         margin: 20px auto 0 auto;
     }
     .container .left-container .button button {
         margin: 20px auto 0 auto;
         display: block;
-    padding: 7px 20px;
-
+        padding: 7px 20px;
     }
     .container .right-container {
         display: block;
         margin: 20px auto 0 auto;
         width: 800px;
     }
-
-    .container .right-container #what_doing_section{
+    .container .right-container #what_doing_section {
         position: relative;
         height: 505px;
     }
-    .container .right-container #what_doing_section .box{
+    .container .right-container #what_doing_section .box {
         width: 360px;
     }
     .resume-left {
         padding: 10px;
     }
-    .port-content{
+    .port-content {
         position: initial;
         width: 800px;
         height: 543px;
     }
-    .port-content .port-tabs{
+    .port-content .port-tabs {
         padding-top: 20px;
     }
     .contact-container .contact-input {
         height: 539px;
     }
+}
+
+@media (max-width: 870px) {
+    body {
+        height: 1800px;
+    }
+    .container {
+        margin-top: -1020px;
+    }
+    .container .left-container .img-container {
+        margin-left: 0;
+    }
+    .container .left-container {
+        flex-direction: column;
+        height: 660px;
+        width: 550px;
+    }
+    .container .left-container .second-detail-container {
+        height: 250px;
+        margin-right: 0;
+    }
+    .container .right-container {
+        width: 550px;
+    }
+    .container .right-container #what_doing_section .box-section {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .container .right-container #what_doing_section {
+        height: 830px;
+        margin-bottom: 20px;
+    }
+    .resume-left {
+        padding: 0;
+    }
+    .resume-left .education-container .education-detail {
+        padding: 10px;
+    }
+    .port-content {
+        width: 550px;
+        height: 670px;
+    }
+    .port-content .port-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-container .contact-input input, .contact-container .contact-input textarea {
+        width: 430px;
+    }
+}
+
+@media (max-width: 560px) {
+    body{
+        height: 1950px;
+    }
+    .container {
+        margin-top: -1210px;
+    }
+    .container .left-container {
+        width: 98%;
+    }
+
+    .container .right-container{
+        width: 98%;
+    }
+    .container .right-container #what_doing_section{
+        height: 725px;
+    }
+    .container .right-container #what_doing_section .box {
+        width: 95%;
+        height: 130px;
+    }
+    .container .resume-container{
+        padding: 30px;
+    }
+    .container .resume-container .resume-content{
+        display: block;
+    }
+    .resume-left .education-container .education-detail {
+        padding: 10px 30px;
+    }
+    .resume-left .other-skill{
+        margin-top: 25px;
+    }
+    .resume-left .other-skill h2 {
+        margin-bottom: 20px;
+    }
+    .experience-header{
+        margin-top: 50px;
+    }
+    .port-content{
+        width: 98%;
+        height: 1110px;
+    }
+    .port-content .port-boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .port-content .port-box a img {
+        width: 280px;
+        height: 165px;
+        border: 3px solid rgb(197, 197, 197);
+    }
+    .port-content .port-tabs {
+        margin: 15px 0 0 25px;
+        font-size: 17px;
+    }
+    .contact-container .contact-input input, .contact-container .contact-input textarea {
+        width: 95%;
+        padding: 7px 10px;
+    }
+.contact-container .contact-input form{
+    width: 100%;
+}
 }
