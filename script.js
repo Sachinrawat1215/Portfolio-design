@@ -22,6 +22,27 @@ function controlPage() {
 
 navBtn.addEventListener('click', () => {
     navBox.classList.toggle('active');
+
+    if(navBox.classList.contains("active")){
+        console.log("yes it is containing...");
+        second.style.display = "none";
+        first.style.transform = "rotate(45deg)";
+        third.style.transform = "rotate(-45deg)";
+        first.style.position = "absolute";
+        third.style.position = "absolute";
+        first.style.top = "17px";
+        third.style.top = "17px";
+    }else{
+        console.log("NO it's not containing...");
+        second.style.display = "block";
+        first.style.transform = "rotate(0deg)";
+        third.style.transform = "rotate(0deg)";
+        first.style.position = "relative";
+        third.style.position = "relative";
+        first.style.top = "0px";
+        third.style.top = "0px";
+    }
+
     resume.addEventListener('click', () => {
         controlPage();
         resume.classList.add('active');

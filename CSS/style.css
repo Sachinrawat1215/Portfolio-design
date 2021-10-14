@@ -231,7 +231,7 @@ p{
 .container .right-container .nav-icon{
     background: rgb(131, 58, 180);
     background: linear-gradient(163deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 54%, rgba(252, 176, 69, 1) 100%);
-    padding: 11px 7px;
+    padding: 8px 7px;
     margin: 20px;
     display: inline-block;
     border-radius: 25px;
@@ -239,6 +239,8 @@ p{
     top: 0;
     right: 0;
     cursor: pointer;
+    width: 43px;
+    height: 43px;
 }
 
 .container .right-container .nav-icon .first,
@@ -480,3 +482,19 @@ p{
     background-color: black;
     color: white;
 }
+
+/* .nav-icon .first{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 17px;
+}
+
+.nav-icon .second{
+    display: none;
+}
+
+.nav-icon .third{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 17px;
+} */
