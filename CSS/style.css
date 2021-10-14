@@ -63,9 +63,9 @@ p{
 }
 
 .container .left-container .img-container img{
-    border-radius: 50%;
+    border-radius: 10px;
     background-size: contain;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .container .left-container .name p{

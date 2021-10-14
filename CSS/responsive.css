@@ -31,7 +31,7 @@
         margin-left: 20px;
     }
     .container .left-container .img-container img {
-        margin: 20px;
+        margin: 0px 20px 0 20px;
     }
     .container .left-container .small-icon i {
         font-size: 40px;
@@ -86,6 +86,9 @@
     .container .left-container .img-container {
         margin-left: 0;
     }
+    .container .left-container .img-container img {
+        margin: 15px 20px 0 20px;
+    }
     .container .left-container {
         flex-direction: column;
         height: 660px;
@@ -125,6 +128,9 @@
     }
     .contact-container .contact-input input, .contact-container .contact-input textarea {
         width: 430px;
+    }
+    .container .left-container .name p{
+        text-align: center;
     }
 }
 
